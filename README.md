@@ -64,23 +64,23 @@
     For collaborative projects, public repositories encourage broad participation and community-driven development, while private repositories are better suited for projects requiring restricted access and security. The decision depends on the project’s goals, security concerns, and the desired level of collaboration.
 
 ## Detail the steps involved in making your first commit to a GitHub repository. What are commits, and how do they help in tracking changes and managing different versions of your project?
-Steps to Make Your First Commit to a GitHub Repository
+    Steps to Make Your First Commit to a GitHub Repository
     Initialize a Git Repository
-  Navigate to your project folder in the terminal or command prompt.
-    Run git init to initialize a new Git repository.
-  Create or Modify a File
-    Add a new file (e.g., README.md) or modify an existing one.
-    Use a text editor to write code or documentation.
-  Stage the Changes
-    Run git add <file-name> to add specific files to the staging area.
-    Use git add . to stage all changes at once.
-  Commit the Changes
-    Run git commit -m "Initial commit" to save the changes with a descriptive message.
-  Connect to a GitHub Repository
-    Create a repository on GitHub.
-    Copy the repository URL and link it to your local repository using git remote add origin <repository-url>
-  Push the Commit to GitHub
-    Run git push -u origin main to upload the changes to GitHub.
+        Navigate to your project folder in the terminal or command prompt.
+        Run git init to initialize a new Git repository.
+      Create or Modify a File
+        Add a new file (e.g., README.md) or modify an existing one.
+        Use a text editor to write code or documentation.
+      Stage the Changes
+        Run git add <file-name> to add specific files to the staging area.
+        Use git add . to stage all changes at once.
+      Commit the Changes
+        Run git commit -m "Initial commit" to save the changes with a descriptive message.
+      Connect to a GitHub Repository
+        Create a repository on GitHub.
+        Copy the repository URL and link it to your local repository using git remote add origin <repository-url>
+      Push the Commit to GitHub
+        Run git push -u origin main to upload the changes to GitHub.
 
 ## How does branching work in Git, and why is it an important feature for collaborative development on GitHub? Discuss the process of creating, using, and merging branches in a typical workflow.
 How Branching Works in Git and Its Importance
