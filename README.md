@@ -83,48 +83,48 @@
         Run git push -u origin main to upload the changes to GitHub.
 
 ## How does branching work in Git, and why is it an important feature for collaborative development on GitHub? Discuss the process of creating, using, and merging branches in a typical workflow.
-How Branching Works in Git and Its Importance
-    Branching in Git allows developers to create separate lines of development within a project. It enables multiple team members to work on different features, bug fixes, or experiments simultaneously without affecting the main codebase. This is essential for collaborative development, as it helps manage parallel workstreams, reduces conflicts, and ensures a structured development process.
-Process of Creating, Using, and Merging Branches in Git
-    Creating a New Branch
-    To create a new branch, use the command git branch feature-branch. This creates a separate line of development without affecting the main branch. To switch to the newly created branch, use git checkout feature-branch. Alternatively, you can create and switch to the new branch in a single step using git checkout -b feature-branch.
-    Working on the Branch
-    Once on the new branch, you can modify files, add features, or fix bugs. After making changes, you need to stage them using git add . and then commit them with a meaningful message using git commit -m "Added new feature".
-    Pushing the Branch to GitHub
-    If you want to share your branch with collaborators, push it to GitHub using git push -u origin feature-branch. This makes the branch available online so others can review or contribute to your work.
-    Merging the Branch into the Main Branch
-Once the development work is complete, switch back to the main branch using git checkout main. Before merging, pull the latest updates from GitHub with git pull origin main to ensure your main branch is up to date. Then, merge the feature branch into the main branch using git merge feature-branch.
-    Resolving Merge Conflicts 
-    If there are merge conflicts, Git will highlight them in the affected files. You need to manually edit those files to resolve the conflicts. Once resolved, stage the changes using git add . and commit them with git commit -m "Resolved merge conflicts".
-    Deleting the Branch 
-    After merging, you can delete the feature branch to keep your repository clean. To delete it locally, use git branch -d feature-branch. If you also want to remove it from GitHub, use git push origin --delete feature-branch.
+    How Branching Works in Git and Its Importance
+        Branching in Git allows developers to create separate lines of development within a project. It enables multiple team members to work on different features, bug fixes, or experiments simultaneously without affecting the main codebase. This is essential for collaborative development, as it helps manage parallel workstreams, reduces conflicts, and ensures a structured development process.
+    Process of Creating, Using, and Merging Branches in Git
+        Creating a New Branch
+        To create a new branch, use the command git branch feature-branch. This creates a separate line of development without affecting the main branch. To switch to the newly created branch, use git checkout feature-branch. Alternatively, you can create and switch to the new branch in a single step using git checkout -b feature-branch.
+        Working on the Branch
+        Once on the new branch, you can modify files, add features, or fix bugs. After making changes, you need to stage them using git add . and then commit them with a meaningful message using git commit -m "Added new feature".
+        Pushing the Branch to GitHub
+        If you want to share your branch with collaborators, push it to GitHub using git push -u origin feature-branch. This makes the branch available online so others can review or contribute to your work.
+        Merging the Branch into the Main Branch
+    Once the development work is complete, switch back to the main branch using git checkout main. Before merging, pull the latest updates from GitHub with git pull origin main to ensure your main branch is up to date. Then, merge the feature branch into the main branch using git merge feature-branch.
+        Resolving Merge Conflicts 
+        If there are merge conflicts, Git will highlight them in the affected files. You need to manually edit those files to resolve the conflicts. Once resolved, stage the changes using git add . and commit them with git commit -m "Resolved merge conflicts".
+        Deleting the Branch 
+        After merging, you can delete the feature branch to keep your repository clean. To delete it locally, use git branch -d feature-branch. If you also want to remove it from GitHub, use git push origin --delete feature-branch.
 
 ## Explore the role of pull requests in the GitHub workflow. How do they facilitate code review and collaboration, and what are the typical steps involved in creating and merging a pull request?
-      The Role of Pull Requests in GitHub Workflow
-      A pull request (PR) allows developers to propose changes to a codebase and have them reviewed before merging into the main branch. It is essential for collaboration, ensuring that changes are reviewed, discussed, and refined before being added to the project. Pull requests help maintain code quality by allowing developers to provide feedback, suggest improvements, and identify potential issues before merging.
-      
-      Steps to Create and Merge a Pull Request
-      The first step in creating a pull request is to work on a separate branch instead of directly modifying the main branch. A developer creates a new branch to isolate changes and prevent conflicts. After making the necessary updates or adding a new feature, the changes are committed with a meaningful message describing the updates. Once the work is complete, the branch is pushed to GitHub.
-      
-      Next, the developer navigates to GitHub, selects the repository, and opens the Pull Requests tab. They then click on New Pull Request, compare the feature branch with the main branch, and provide a title and description explaining the changes. This helps team members understand the purpose of the pull request.
-      
-      After submitting the pull request, team members review the changes, provide comments, and may request modifications if necessary. The developer can then make the required updates and push them to the same branch, automatically updating the pull request. Once the code is approved, the pull request is merged into the main branch.
-      
-      To keep the repository clean, the branch used for the changes is typically deleted after merging. This ensures that only relevant and up-to-date branches remain in the project.
-      
-      Why Pull Requests Matter
-      Pull requests enhance collaboration by allowing developers to review and improve each other's work before it becomes part of the project. They also help maintain a structured development process, reduce errors, and ensure the stability of the codebase. By encouraging discussions and feedback, pull requests improve overall code quality and make it easier to track changes over time.
+          The Role of Pull Requests in GitHub Workflow
+          A pull request (PR) allows developers to propose changes to a codebase and have them reviewed before merging into the main branch. It is essential for collaboration, ensuring that changes are reviewed, discussed, and refined before being added to the project. Pull requests help maintain code quality by allowing developers to provide feedback, suggest improvements, and identify potential issues before merging.
+          
+          Steps to Create and Merge a Pull Request
+          The first step in creating a pull request is to work on a separate branch instead of directly modifying the main branch. A developer creates a new branch to isolate changes and prevent conflicts. After making the necessary updates or adding a new feature, the changes are committed with a meaningful message describing the updates. Once the work is complete, the branch is pushed to GitHub.
+          
+          Next, the developer navigates to GitHub, selects the repository, and opens the Pull Requests tab. They then click on New Pull Request, compare the feature branch with the main branch, and provide a title and description explaining the changes. This helps team members understand the purpose of the pull request.
+          
+          After submitting the pull request, team members review the changes, provide comments, and may request modifications if necessary. The developer can then make the required updates and push them to the same branch, automatically updating the pull request. Once the code is approved, the pull request is merged into the main branch.
+          
+          To keep the repository clean, the branch used for the changes is typically deleted after merging. This ensures that only relevant and up-to-date branches remain in the project.
+          
+        Why Pull Requests Matter
+          Pull requests enhance collaboration by allowing developers to review and improve each other's work before it becomes part of the project. They also help maintain a structured development process, reduce errors, and ensure the stability of the codebase. By encouraging discussions and feedback, pull requests improve overall code quality and make it easier to track changes over time.
 ## Discuss the concept of "forking" a repository on GitHub. How does forking differ from cloning, and what are some scenarios where forking would be particularly useful?
-The Concept of Forking a Repository on GitHub
-    Forking a repository on GitHub creates a personal copy of another user’s repository under your GitHub account. This allows you to freely modify the code without affecting the original project. Forking is useful for contributing to open-source projects, experimenting with changes, or customizing a project for personal use.
-
-Difference Between Forking and Cloning
-    Forking creates a separate copy of a repository on GitHub, allowing independent modifications. The forked repository remains connected to the original repository, enabling pull requests for contributing changes.
-    Cloning downloads a repository to a local machine, allowing changes to be made offline. However, cloning does not create a separate repository on GitHub.
-When is Forking Useful?
-    Contributing to Open-Source Projects – Developers can fork a project, make improvements, and submit pull requests to suggest changes.
-    Experimenting Without Affecting the Original Repository – Users can test new features or make modifications without altering the main project.
-    Creating a Personal Version of a Project – Developers can customize an open-source project to meet specific needs while keeping it separate from the original repository.
+    The Concept of Forking a Repository on GitHub
+        Forking a repository on GitHub creates a personal copy of another user’s repository under your GitHub account. This allows you to freely modify the code without affecting the original project. Forking is useful for contributing to open-source projects, experimenting with changes, or customizing a project for personal use.
+    
+    Difference Between Forking and Cloning
+        Forking creates a separate copy of a repository on GitHub, allowing independent modifications. The forked repository remains connected to the original repository, enabling pull requests for contributing changes.
+        Cloning downloads a repository to a local machine, allowing changes to be made offline. However, cloning does not create a separate repository on GitHub.
+    When is Forking Useful?
+        Contributing to Open-Source Projects – Developers can fork a project, make improvements, and submit pull requests to suggest changes.
+        Experimenting Without Affecting the Original Repository – Users can test new features or make modifications without altering the main project.
+        Creating a Personal Version of a Project – Developers can customize an open-source project to meet specific needs while keeping it separate from the original repository.
 
 ## Examine the importance of issues and project boards on GitHub. How can they be used to track bugs, manage tasks, and improve project organization? Provide examples of how these tools can enhance collaborative efforts.
 The Importance of Issues and Project Boards on GitHub
