@@ -127,33 +127,33 @@
         Creating a Personal Version of a Project – Developers can customize an open-source project to meet specific needs while keeping it separate from the original repository.
 
 ## Examine the importance of issues and project boards on GitHub. How can they be used to track bugs, manage tasks, and improve project organization? Provide examples of how these tools can enhance collaborative efforts.
-The Importance of Issues and Project Boards on GitHub
-    Issues and Project Boards are essential tools on GitHub that help teams track bugs, manage tasks, and organize projects efficiently. These tools enhance collaboration by allowing developers to communicate, prioritize work, and monitor progress.
-
-How Issues Help in Project Management
-    GitHub Issues act as a task-tracking system where team members can report bugs, request features, or discuss improvements. Each issue includes a title, description, labels, and comments to provide context and facilitate discussion. For example:
-
-    A developer identifies a bug and creates an issue titled "Fix login authentication error," providing details and error messages.
-    Team members discuss the issue, assign responsibility, and track its resolution.
-Using Project Boards for Task Management
-    GitHub Project Boards function like a Kanban board, helping teams visualize tasks in columns such as To Do, In Progress, and Completed. Each task is linked to an issue or pull request, ensuring seamless workflow management. For example:
-
-    A software development team creates a board for a new app feature.
-    Tasks like "Design UI," "Implement API," and "Test functionality" are added to the board.
-    As work progresses, tasks move from To Do to In Progress and finally Completed.
-    Enhancing Collaboration with Issues and Project Boards
-    These tools improve teamwork by providing a structured approach to task management. Developers, designers, and project managers can track progress, assign responsibilities, and ensure accountability. By organizing work efficiently, GitHub Issues and Project Boards contribute to a smoother and more productive development process.
+    The Importance of Issues and Project Boards on GitHub
+        Issues and Project Boards are essential tools on GitHub that help teams track bugs, manage tasks, and organize projects efficiently. These tools enhance collaboration by allowing developers to communicate, prioritize work, and monitor progress.
+    
+    How Issues Help in Project Management
+        GitHub Issues act as a task-tracking system where team members can report bugs, request features, or discuss improvements. Each issue includes a title, description, labels, and comments to provide context and facilitate discussion. For example:
+    
+        A developer identifies a bug and creates an issue titled "Fix login authentication error," providing details and error messages.
+        Team members discuss the issue, assign responsibility, and track its resolution.
+    Using Project Boards for Task Management
+        GitHub Project Boards function like a Kanban board, helping teams visualize tasks in columns such as To Do, In Progress, and Completed. Each task is linked to an issue or pull request, ensuring seamless workflow management. For example:
+    
+        A software development team creates a board for a new app feature.
+        Tasks like "Design UI," "Implement API," and "Test functionality" are added to the board.
+        As work progresses, tasks move from To Do to In Progress and finally Completed.
+        Enhancing Collaboration with Issues and Project Boards
+        These tools improve teamwork by providing a structured approach to task management. Developers, designers, and project managers can track progress, assign responsibilities, and ensure accountability. By organizing work efficiently, GitHub Issues and Project Boards contribute to a smoother and more productive development process.
 
 ## Reflect on common challenges and best practices associated with using GitHub for version control. What are some common pitfalls new users might encounter, and what strategies can be employed to overcome them and ensure smooth collaboration?
-Common Challenges New Users Face
-    Merge Conflicts – When multiple people edit the same file, Git may struggle to merge changes. This often happens when changes are made to the same lines of code.
-    Accidentally Overwriting Changes – Pushing updates without pulling the latest changes first can overwrite teammates’ work.
-    Unclear Commit Messages – Vague commit messages like "Fixed stuff" make it difficult to track changes.
-    Working Directly on the Main Branch – Making changes directly to the main branch instead of using feature branches can lead to instability.
-    Not Using Issues and Pull Requests Properly – Ignoring GitHub Issues and Pull Requests can result in disorganized collaboration and lost feedback.
-Best Practices to Overcome These Challenges
-    Regularly Pull Changes – Before making edits, use git pull origin main to ensure you’re working with the latest version.
-    Use Feature Branches – Create separate branches for new features (git checkout -b feature-branch) to keep the main branch stable.
-    Write Clear Commit Messages – Use descriptive messages like "Fixed login authentication issue" instead of generic phrases.
-    Resolve Merge Conflicts Carefully – Review conflicting files, manually fix the issues, and test before committing.
-    Leverage Issues and Pull Requests – Open issues for bugs and new features, and use pull requests for code reviews before merging changes.
+    Common Challenges New Users Face
+        Merge Conflicts – When multiple people edit the same file, Git may struggle to merge changes. This often happens when changes are made to the same lines of code.
+        Accidentally Overwriting Changes – Pushing updates without pulling the latest changes first can overwrite teammates’ work.
+        Unclear Commit Messages – Vague commit messages like "Fixed stuff" make it difficult to track changes.
+        Working Directly on the Main Branch – Making changes directly to the main branch instead of using feature branches can lead to instability.
+        Not Using Issues and Pull Requests Properly – Ignoring GitHub Issues and Pull Requests can result in disorganized collaboration and lost feedback.
+    Best Practices to Overcome These Challenges
+        Regularly Pull Changes – Before making edits, use git pull origin main to ensure you’re working with the latest version.
+        Use Feature Branches – Create separate branches for new features (git checkout -b feature-branch) to keep the main branch stable.
+        Write Clear Commit Messages – Use descriptive messages like "Fixed login authentication issue" instead of generic phrases.
+        Resolve Merge Conflicts Carefully – Review conflicting files, manually fix the issues, and test before committing.
+        Leverage Issues and Pull Requests – Open issues for bugs and new features, and use pull requests for code reviews before merging changes.
